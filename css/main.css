@@ -5,12 +5,12 @@
 }
 
 :root {
-  --bgFundo: #000814ff;
-  --primaria: #001d3dff;
-  --secundaria: #003566ff;
-  --destacadaPrimaria: #ffc300ff;
-  --destacadaSecundaria: #ffd60aff;
-  --fonte: #fff;
+  --bgFundo: #050a14;
+  --primaria: #0b1120;
+  --secundaria: #111c32;
+  --destacadaPrimaria: #00e5ff;
+  --destacadaSecundaria: #7cff6b;
+  --fonte: #e6edf7;
 }
 
 body {
