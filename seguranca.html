@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Início</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- 
+    • Área interativa onde o usuário pode gerar senhas fortes.
+    • Lógica JS: O script deve gerar uma string aleatória misturando letras, números e
+      caracteres especiais.
+    • Exibir a senha gerada na tela para o usuário. -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Conteúdo 1</a></li>
+          <li><a href="#">Conteúdo 2</a></li>
+          <li><a href="#" class="active">Gerador de senha</a></li>
+          <li><a href="#">Sobre o Grupo</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Gerador de senha</h1>
+        <article>
+          <h2 id="senhaText">Senha:</h2>
+          <button onclick="getPassword()">Gerar</button>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <span>Universidade de Passo Fundo</span>
+      <span>Projeto de Cibersegurança</span>
+      <span>Instituto de Tecnologia UPF</span>
+    </footer>
+    <script src="./js/gerador-senha.js"></script>
+  </body>
+</html>
