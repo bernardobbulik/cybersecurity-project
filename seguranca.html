@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Início</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/seguranca.css" />
     <!-- 
     • Área interativa onde o usuário pode gerar senhas fortes.
     • Lógica JS: O script deve gerar uma string aleatória misturando letras, números e
@@ -28,6 +28,13 @@
     <main>
       <section>
         <h1>Gerador de senha</h1>
+        <article>
+          <p class="card">
+            Esse gerador de senha foi desenvolvido utilizando a tabela ASCII,
+            portanto, todo e qualquer caractere poderão estar presentes na senha
+            gerada!
+          </p>
+        </article>
         <article>
           <h2 id="senhaText">Senha:</h2>
           <button onclick="getPassword()">Gerar</button>

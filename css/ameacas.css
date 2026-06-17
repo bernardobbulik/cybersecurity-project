@@ -1,0 +1,15 @@
+main section h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--destacadaPrimaria);
+}
+
+main section p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+main section ul {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+}

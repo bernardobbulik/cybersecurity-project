@@ -1,0 +1,4 @@
+.card {
+  padding: 1.6rem;
+  background-color: rgba(var(--destacadaPrimaria), 0.3);
+}
