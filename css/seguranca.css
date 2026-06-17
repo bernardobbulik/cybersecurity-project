@@ -1,10 +1,124 @@
+main section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 48rem;
+  width: 90%;
+}
+
+main section > h1 {
+  color: var(--destacadaPrimaria);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
 .card {
   padding: 1.6rem;
   background-color: rgba(var(--secundariaRGB), 1);
   border: 2px solid var(--destacadaPrimaria);
   border-radius: 15px;
-  margin: 2rem 0rem;
+  margin: 2rem 0;
+  width: 100%;
+  line-height: 1.5;
+  text-align: left;
 }
 
-article input {
+main section article {
+  width: 100%;
+}
+
+main section article + article {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background-color: rgba(var(--secundariaRGB), 0.35);
+  border: 2px solid var(--secundaria);
+  border-radius: 15px;
+}
+
+main section article + article > h2 {
+  grid-column: 1 / -1;
+  width: 100%;
+  color: var(--destacadaPrimaria);
+  text-align: center;
+}
+
+main section article + article > input {
+  grid-column: 1;
+  grid-row: 2;
+  min-width: 16rem;
+  padding: 0.7rem 5.2rem 0.7rem 0.7rem;
+  color: var(--fonte);
+  background-color: var(--primaria);
+  border: 1px solid var(--destacadaPrimaria);
+  border-radius: 10px;
+  outline: none;
+}
+
+main section article + article > input:focus {
+  box-shadow: 0 0 0 3px rgba(var(--secundariaRGB), 1);
+}
+
+main section article + article > button {
+  min-width: 7rem;
+  padding: 0.7rem 1.2rem;
+  color: var(--primaria);
+  background-color: var(--destacadaPrimaria);
+  border: 1px solid var(--destacadaPrimaria);
+  border-radius: 10px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+main section article + article > input + button {
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: end;
+  min-width: 0;
+  margin-right: 0.3rem;
+  padding: 0.45rem 0.75rem;
+  color: var(--destacadaPrimaria);
+  background-color: transparent;
+}
+
+main section article + article > input + button + button {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+main section article + article > button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  main section {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  main section article + article {
+    grid-template-columns: 1fr;
+    padding: 1.4rem;
+  }
+
+  main section article + article > input,
+  main section article + article > button {
+    grid-column: 1;
+    width: 100%;
+    min-width: 0;
+  }
+
+  main section article + article > input + button {
+    grid-row: 2;
+    width: auto;
+  }
+
+  main section article + article > input + button + button {
+    grid-row: 3;
+  }
 }

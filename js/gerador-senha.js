@@ -1,6 +1,6 @@
 const resultText = document.getElementById("senhaText");
 let senha;
-let pwrLenght = 10;
+let pwrLenght = 16;
 
 function getRandomNumber(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -14,4 +14,20 @@ function getPassword() {
     escapePassword += String.fromCharCode(charCode);
   }
   resultText.value = escapePassword;
+}
+
+async function copyPassword() {
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(resultText.value);
+    } else {
+      resultText.select();
+      document.execCommand("copy");
+    }
+  } catch {
+    resultText.select();
+    document.execCommand("copy");
+  }
+
+  alert("Copiado para a área de transferência");
 }
