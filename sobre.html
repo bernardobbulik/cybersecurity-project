@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gerador de senha</title>
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/seguranca.css" />
+    <link rel="stylesheet" href="./css/sobre.css" />
     <!-- 
-    • Área interativa onde o usuário pode gerar senhas fortes.
-    • Lógica JS: O script deve gerar uma string aleatória misturando letras, números e
-      caracteres especiais.
-    • Exibir a senha gerada na tela para o usuário. -->
+    • Apresentação dos integrantes do grupo.
+    • Obrigatório: Foto de cada membro e uma breve descrição. -->
   </head>
   <body>
     <header>
@@ -28,10 +26,22 @@
       </nav>
       <span class="header-actions">
         <button onclick="swapMode()" aria-label="Alternar tema">
-          <img id="modeIcon" width="20px" src="./assets/icons/moon.svg" alt="Dark mode" />
+          <img
+            id="modeIcon"
+            width="20px"
+            src="./assets/icons/moon.svg"
+            alt="Dark mode"
+          />
         </button>
-        <button onclick="toggleAccessibilityMenu()" aria-label="Abrir menu de acessibilidade">
-          <img width="20px" src="./assets/icons/acessibilidade.svg" alt="Acessibilidade" />
+        <button
+          onclick="toggleAccessibilityMenu()"
+          aria-label="Abrir menu de acessibilidade"
+        >
+          <img
+            width="20px"
+            src="./assets/icons/acessibilidade.svg"
+            alt="Acessibilidade"
+          />
         </button>
         <div class="accessibility-menu">
           <button type="button" onclick="increaseFontSize()">A+</button>
@@ -42,7 +52,33 @@
     </header>
     <main>
       <section>
-        <h1>Sobre o grupo</h1>
+        <article>
+          <h1>Sobre o grupo</h1>
+
+          <p>
+            Este projeto foi desenvolvido por um grupo formado por três
+            estudantes do 1º semestre do curso de Ciência da Computação da
+            Universidade de Passo Fundo. A equipe reuniu seus conhecimentos
+            iniciais em desenvolvimento web, adquiridos na disciplina Web Lab,
+            utilizando HTML, CSS e JavaScript para criar um site informativo,
+            acessível e útil para conscientizar os usuários sobre boas práticas
+            de proteção digital e demonstrar domínio nas tecnologias citadas.
+          </p>
+          <section class="integrantes-img">
+            <div class="integrante">
+              <img src="./assets/img/me.JPG" alt="Bernardo Bulik" />
+              <h4>Bernardo Borrin Bulik</h4>
+            </div>
+            <div class="integrante">
+              <img src="./assets/img/lorenzo.JPEG" alt="Bernardo Bulik" />
+              <h4>Lorenzo Mello Duarte</h4>
+            </div>
+            <div class="integrante">
+              <img src="./assets/img/samuel.JPEG" alt="Bernardo Bulik" />
+              <h4>Samuel Eliabe Vieira</h4>
+            </div>
+          </section>
+        </article>
       </section>
     </main>
     <footer>
