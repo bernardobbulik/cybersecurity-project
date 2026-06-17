@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/contato.css" />
+    <!-- 
+    • Formulário de contato estruturado.
+    • Comportamento: Ao clicar em "Enviar"(submit), deve disparar um alerta via 
+      JavaScript com a mensagem: "Página em construção" -->
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./ameacas.html">Ameaças e vulnerabilidades</a></li>
+          <li><a href="./protecoes.html">Proteções</a></li>
+          <li>
+            <a href="./seguranca.html">Gerador de senha</a>
+          </li>
+          <li><a href="./sobre.html">Sobre o Grupo</a></li>
+          <li><a href="./contato.html" class="active">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Contato</h1>
+        <article>
+          <form action="#">
+            <label for="nome">Seu nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="João da Silva"
+              required
+            />
+            <label for="nome">Seu e-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="seuemail@dominio"
+              required
+            />
+            <label for="assunto">Assunto</label>
+            <textarea id="assunto" name="assunto" required></textarea>
+            <div class="form-footer">
+              <button type="submit">Enviar</button>
+              <button type="reset">Limpar</button>
+            </div>
+          </form>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <span>Universidade de Passo Fundo</span>
+      <span>Projeto de Cibersegurança</span>
+      <span>Instituto de Tecnologia UPF</span>
+    </footer>
+  </body>
+</html>
