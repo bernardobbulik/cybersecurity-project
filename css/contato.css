@@ -44,16 +44,27 @@ form .form-footer button {
   width: 125px;
   padding: 0.3rem;
   cursor: pointer;
-  background-color: var(--secundaria);
-  color: var(--fonte);
+  background-color: var(--primaria);
+  color: var(--destacadaPrimaria);
   border-radius: 10px;
-  border: 0;
+  border: 1px solid var(--destacadaPrimaria);
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 form .form-footer button[type="submit"] {
   background-color: var(--destacadaPrimaria);
+  color: var(--primaria);
+  border-color: var(--destacadaPrimaria);
 }
 
 form .form-footer button:hover {
   transform: scale(1.1);
+}
+
+form .form-footer button[type="reset"]:hover {
+  background-color: var(--destacadaPrimaria);
+  color: var(--primaria);
 }

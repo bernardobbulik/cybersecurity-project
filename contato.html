@@ -30,7 +30,7 @@
       <section>
         <h1>Contato</h1>
         <article>
-          <form action="#">
+          <form action="./contato.html">
             <label for="nome">Seu nome</label>
             <input
               type="text"
@@ -50,7 +50,7 @@
             <label for="assunto">Assunto</label>
             <textarea id="assunto" name="assunto" required></textarea>
             <div class="form-footer">
-              <button type="submit">Enviar</button>
+              <button type="submit" onclick="submitContact()">Enviar</button>
               <button type="reset">Limpar</button>
             </div>
           </form>
@@ -62,5 +62,6 @@
       <span>Projeto de Cibersegurança</span>
       <span>Instituto de Tecnologia UPF</span>
     </footer>
+    <script src="./js/contato.js"></script>
   </body>
 </html>
