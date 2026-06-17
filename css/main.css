@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-:root {
+body.dark-mode {
   --bgFundo: #050a14;
   --primaria: #0b1120;
   --secundaria: #111c32;
@@ -13,10 +13,11 @@
   --fonte: #e6edf7;
 }
 
-.light-mode {
+:root {
   --bgFundo: #f1f5f9;
   --primaria: #ffffff;
   --secundaria: #dbeafe;
+  --secundariaRGB: 219, 234, 254;
   --destacadaPrimaria: #0369a1;
   --fonte: #172033;
 }
@@ -80,7 +81,7 @@ header .active {
 header button {
   padding: 0.5rem 0.75rem;
   color: var(--fonte);
-  background-color: var(--primaria);
+  background-color: var(--destacadaPrimaria);
   border: 1px solid var(--destacadaPrimaria);
   border-radius: 0.35rem;
   cursor: pointer;
