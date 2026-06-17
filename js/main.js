@@ -11,3 +11,39 @@ function swapMode() {
     modeIcon.alt = "Dark mode";
   }
 }
+
+const defaultFontSize = 16;
+const minFontSize = 12;
+const maxFontSize = 24;
+let currentFontSize = defaultFontSize;
+
+function toggleAccessibilityMenu() {
+  const accessibilityMenu = document.querySelector(".accessibility-menu");
+
+  if (accessibilityMenu) {
+    accessibilityMenu.classList.toggle("show");
+  }
+}
+
+function applyFontSize() {
+  document.body.style.fontSize = `${currentFontSize}px`;
+}
+
+function increaseFontSize() {
+  if (currentFontSize < maxFontSize) {
+    currentFontSize += 2;
+    applyFontSize();
+  }
+}
+
+function resetFontSize() {
+  currentFontSize = defaultFontSize;
+  applyFontSize();
+}
+
+function decreaseFontSize() {
+  if (currentFontSize > minFontSize) {
+    currentFontSize -= 2;
+    applyFontSize();
+  }
+}

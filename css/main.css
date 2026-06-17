@@ -78,6 +78,13 @@ header .active {
   background-color: var(--destacadaPrimaria);
 }
 
+header .header-actions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 header button {
   padding: 0.5rem 0.75rem;
   color: var(--fonte);
@@ -95,6 +102,29 @@ header button:hover {
   color: var(--primaria);
   background-color: var(--destacadaPrimaria);
   transform: translateY(-2px);
+}
+
+.accessibility-menu {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  z-index: 10;
+  display: none;
+  gap: 0.35rem;
+  padding: 0.5rem;
+  background-color: var(--secundaria);
+  border: 1px solid var(--destacadaPrimaria);
+  border-radius: 0.35rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.18);
+}
+
+.accessibility-menu.show {
+  display: flex;
+}
+
+.accessibility-menu button {
+  min-width: 2.5rem;
+  font-weight: bold;
 }
 
 main {

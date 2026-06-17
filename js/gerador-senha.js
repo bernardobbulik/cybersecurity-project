@@ -13,5 +13,5 @@ function getPassword() {
     let charCode = getRandomNumber(32, 126);
     escapePassword += String.fromCharCode(charCode);
   }
-  resultText.innerHTML = escapePassword;
+  resultText.value = escapePassword;
 }

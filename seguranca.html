@@ -26,10 +26,23 @@
           <li><a href="./contato.html">Contato</a></li>
         </ul>
       </nav>
-      <span>
-        <button onclick="swapMode()">
-          <img id="modeIcon" width="20px" src="./assets/icons/moon.svg" alt="Dark mode" />
+      <span class="header-actions">
+        <button onclick="swapMode()" aria-label="Alternar tema">
+          <img
+            id="modeIcon"
+            width="20px"
+            src="./assets/icons/moon.svg"
+            alt="Dark mode"
+          />
         </button>
+        <button onclick="toggleAccessibilityMenu()" aria-label="Abrir menu de acessibilidade">
+          <img width="20px" src="./assets/icons/acessibilidade.svg" alt="Acessibilidade" />
+        </button>
+        <div class="accessibility-menu">
+          <button type="button" onclick="increaseFontSize()">A+</button>
+          <button type="button" onclick="resetFontSize()">A</button>
+          <button type="button" onclick="decreaseFontSize()">A-</button>
+        </div>
       </span>
     </header>
     <main>
@@ -43,7 +56,8 @@
           </p>
         </article>
         <article>
-          <h2 id="senhaText">Senha:</h2>
+          <h2>Senha:</h2>
+          <input type="text" id="senhaText" />
           <button onclick="getPassword()">Gerar</button>
         </article>
       </section>

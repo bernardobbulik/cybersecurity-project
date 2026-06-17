@@ -1,4 +1,10 @@
 .card {
   padding: 1.6rem;
-  background-color: rgba(var(--destacadaPrimaria), 0.3);
+  background-color: rgba(var(--secundariaRGB), 1);
+  border: 2px solid var(--destacadaPrimaria);
+  border-radius: 15px;
+  margin: 2rem 0rem;
+}
+
+article input {
 }
